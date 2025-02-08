@@ -4,7 +4,7 @@ public class Main {
     static Scanner scan = new Scanner(System.in);
     static String name;
     static String password;
-    static Schedule schedule;
+    static Schedule schedule = new Schedule();
 
     public static void main(String[] args) {
         System.out.println("----------[BIG BROTHER BUDDY APP]----------");
