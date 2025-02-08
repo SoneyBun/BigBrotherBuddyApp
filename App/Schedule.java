@@ -7,11 +7,16 @@ public class Schedule {
     static Scanner scan = new Scanner(System.in);
     private static int hour, minute;
 
+    public Schedule() {
+        event.add("2 Minute Hate");
+        time.add("11:00");
+    }
+
     public static void printSchedule() {
         System.out.println("\nCurrent Schedule: ");
 
         for(int i = 0; i < event.size(); i++) {
-            System.out.println("Time: " + time.get(i) + "\tEvent: " + event.get(i));
+            System.out.println("Time: " + time.get(i) + "\t\tEvent: " + event.get(i));
         }
     }
 
