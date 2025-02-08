@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px;
+        }
+        h1, h2 {
+            color: #888888;
+        }
+        p {
+            color: #ddd;
+        }
+        .section {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+        }
+        .download-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 25px;
+            background: #888888;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .nav {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .nav button {
+            padding: 10px;
+            background: #888888;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .ads {
+            margin-top: 20px;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            display: block;
+        }
+        .ads img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Big Brother Buddy App</h1>
+        <p>"Like a good neighbor, Big Brother is watching you"</p>
+        <a href="#" class="download-button">Download Now</a>
+        
+        <div class="nav">
+            <button onclick="showSection('about')">About</button>
+            <button onclick="showSection('features')">Features</button>
+            <button onclick="showSection('contact')">Contact</button>
+        </div>
+
+        <div id="about" class="section">
+            <h2>What is the Big Brother Buddy App?</h2>
+            <p>The Big Brother Buddy App will keep you on top of things! Why waste your precious time? Use it to help the Party!</p>
+        </div>
+        
+        <div id="features" class="section">
+            <h2>Features</h2>
+            <p>✔ Schedule<br>✔ Quotes<br>✔ Learn Newspeak</p>
+        </div>
+        
+        <div id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Have questions? Reach out to me at <a href="mailto:sunny.suncode@outlook.com">sunny.suncode@outlook.com</a>.</p>
+        </div>
+
+        <div class="ads">
+            <h2>Why BBBA?</h2>
+            
+            <p>yogesh still needs to tell me what to write here</p>
+        </div>
+    </div>
+</body>
+</html>
