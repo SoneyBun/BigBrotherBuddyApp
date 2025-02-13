@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Thread;
 
 public class Main {
     static Scanner scan = new Scanner(System.in);
@@ -22,7 +23,7 @@ public class Main {
     public static void prompt() {
         int choice;
         while(true) {
-            System.out.println("Greetings " + name + ", What would you like to do today?\n(1) - Schedule\n(2) - Quote\n(3) - Quit");
+            System.out.println("Greetings " + name + ", What would you like to do today?\n(1) - Schedule\n(2) - Quote\n(3) - Two Minutes Hate\n(4) - Quit");
             choice = Integer.parseInt(scan.nextLine());
 
             switch (choice) {
@@ -31,7 +32,8 @@ public class Main {
                     String mod;
                     System.out.println("Would you like to modify your schedule? ");
                     mod = scan.nextLine();
-                    if(mod.toLowerCase().charAt(0) == 't' || mod.toLowerCase().charAt(0) == 'y') {
+                    char temp = mod.toLowerCase().charAt(0);
+                    if(temp == 't' || temp == 'y' || temp == '0' || temp == 'v' || temp == 's') {
                         schedule.modifySchedule();
                         schedule.printSchedule();
                         prompt();
@@ -41,6 +43,16 @@ public class Main {
                     System.out.println(Quote.bigBrotherQuote());
                     prompt();
                 case 3:
+                    try {
+                        for(int i = 0; i < 10; i++) {
+                            System.out.println("DOWN WITH GOLDSTEIN!");
+                            Thread.sleep(500);
+                        }
+                    } catch (Exception e) {
+                        System.out.println("DOWN WITH BIG BROTHER!");
+                    }
+                    break;
+                default:
                     System.out.println("We hope to see you again!");
                     System.exit(0);
             }
