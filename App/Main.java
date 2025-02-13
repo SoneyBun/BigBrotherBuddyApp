@@ -41,7 +41,7 @@ public class Main {
                     System.out.println(Quote.bigBrotherQuote());
                     prompt();
                 case 3:
-                    System.out.println("Thank you for using our demo!");
+                    System.out.println("We hope to see you again!");
                     System.exit(0);
             }
         }
