@@ -13,3 +13,6 @@ The Big Brother Buddy App is an easy-to-use and intuitive program that has been 
 
 <!-- Divider -->
 ---
+
+<!-- Button -->
+<div align="center"><a href="../.." target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/Main-BBBA?style=for-the-badge&logo=github&color=%23ff3131"></a></div>
