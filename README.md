@@ -1,3 +1,15 @@
+<!-- Caution -->
+>[!CAUTION]
+>Big Brother is always watching.
+
+<!-- Header -->
+<div align="center">
+  <img width="1198" height="239" alt="BigBrotherBuddy" src="https://github.com/user-attachments/assets/49ad3c91-2ff1-4c67-bca3-a8917a34aacb" />
+  <h3>Big Brother Buddy App</h3>
+</div>
+
+&nbsp;
+
 ![Title](https://github.com/user-attachments/assets/5e018536-bfbe-4601-8fe6-cc736db1f037)
 
 ---
