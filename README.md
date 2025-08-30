@@ -4,7 +4,7 @@
 
 <!-- Header -->
 <div align="center">
-  <img width="1198" height="239" alt="BigBrotherBuddy" src="https://github.com/user-attachments/assets/49ad3c91-2ff1-4c67-bca3-a8917a34aacb" />
+  <img width="1198" height="239" alt="BBBABanner" src="https://github.com/user-attachments/assets/219d1c03-bf3d-4e84-84aa-187cdfdfd602" />
   <h3>Big Brother Buddy App</h3>
 </div>
 
